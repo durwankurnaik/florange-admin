@@ -48,7 +48,7 @@ dependencies:
     specifier: ^1.1.4
     version: 1.1.4(@types/react-dom@18.2.5)(@types/react@18.2.12)(react-dom@18.2.0)(react@18.2.0)
   '@tanstack/react-table':
-    specifier: ^8.9.2
+    specifier: ^8.9.9
     version: 8.9.9(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: 20.3.1
