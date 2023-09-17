@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "actions/get-sales-count.ts"  ],
   "exclude": [
     "node_modules"
   ]
