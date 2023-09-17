@@ -16,6 +16,9 @@ export async function GET(
       where: {
         id: params.categoryId,
       },
+      include: {
+        billboard: true,
+      },
     });
 
     return NextResponse.json(category);
@@ -69,7 +72,7 @@ export async function PATCH(
       },
       data: {
         name,
-        billboardId
+        billboardId,
       },
     });
 
@@ -83,7 +86,7 @@ export async function PATCH(
 
 export async function DELETE(
   _req: Request, // _ is used before req here because the req is not used and to specify that we don't need to use it but we still need to keep it at first place since params have to be at second place
-  { params }: { params: { storeId: string, categoryId: string } }
+  { params }: { params: { storeId: string; categoryId: string } }
 ) {
   try {
     const { userId } = auth();
